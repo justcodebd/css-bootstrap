@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card {
+            height: 200px;
+            width: 300px;
+            /* overflow: scroll; */
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+
+        }
+        .card img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .card-content {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            bottom: 0;
+            background: rgba(0,0,0,.7);
+            opacity: 0;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: opacity 0.3s;
+        }
+        .content-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover .card-content {
+            opacity: 1;
+        }
+        
+        /* .overfolow {
+            height: 200px;
+            width: 200px;
+            border: 3px solid red;
+            margin-top: 10px;
+            overflow: hidden;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://picsum.photos/200" alt="card image"/>
+        <div class="card-content">
+            <div class="content-text">
+                <h3>Hover content </h3>
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="overfolow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid soluta quo laudantium sint quibusdam itaque odio, unde porro autem esse obcaecati expedita, molestias consectetur voluptas commodi nihil velit impedit optio ipsam? Iure blanditiis quibusdam voluptas, molestias minus, libero praesentium harum vel nisi assumenda inventore alias obcaecati? Nostrum, alias reprehenderit. Quod dicta, laborum iure recusandae accusamus, dolores asperiores, ut adipisci necessitatibus delectus minima eaque numquam a architecto. Explicabo pariatur aspernatur deserunt nemo. Sequi aliquam ex consectetur vitae repellat harum! Iste hic necessitatibus nulla, impedit ipsa a minus culpa labore tenetur nam quos eaque! Laudantium qui aut, voluptas optio cum provident?</p>
+    </div> -->
+</body>
+</html>

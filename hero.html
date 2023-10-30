@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hero {
+            background: url('https://picsum.photos/200');
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100px;
+            background-color: rgba(0,0,0,.5);
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .hero-content {
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to our website</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, nihil?</p>
+        </div>
+    </section>
+</body>
+</html>
